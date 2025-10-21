@@ -1,6 +1,6 @@
 # Versão Atual - Implementação Sequencial do Kmeans
 
-Para roda:
+Para rodar:
 
 g++ kmeans.cpp -o kmeans -fopenmp
 
