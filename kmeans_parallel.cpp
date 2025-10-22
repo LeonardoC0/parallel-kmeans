@@ -192,8 +192,8 @@ public:
     double calculateWCSS() const
     {
         double total_wcss = 0.0;
-        // paralelizar usando o "#pragma omp parallel for reduction(+:total_wcss) concentrando as somas em total_wcss"
-        #pragma omp parallel for reduction(+ : total_wcss)
+// paralelizar usando o "#pragma omp parallel for reduction(+:total_wcss) concentrando as somas em total_wcss"
+#pragma omp parallel for reduction(+ : total_wcss)
         for (const auto &cluster : clusters)
         {
             double cluster_wcss = 0.0;
@@ -280,9 +280,9 @@ public:
                 }
             }
 
-            // 3. Recalcular o centróide de cada cluster
-            //Paralelizamos, não precisamos informar uma variavel para redução pois são alteradas posições diferentes de cluster[i]
-            #pragma omp parallel for
+// 3. Recalcular o centróide de cada cluster
+// Paralelizamos, não precisamos informar uma variavel para redução pois são alteradas posições diferentes de cluster[i]
+#pragma omp parallel for
             for (int i = 0; i < K; i++)
             {
                 int ClusterSize = clusters[i].getSize();
