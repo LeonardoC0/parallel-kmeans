@@ -1,3 +1,6 @@
+/* TEMPO DE EXECUÇÕES
+Tempo Total de Execução: 22.511 segundos (para todas as iterações de K)
+*/
 #include <algorithm>
 #include <cmath>
 #include <fstream>

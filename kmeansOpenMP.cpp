@@ -1,3 +1,10 @@
+/* TEMPO DE EXECUÇÕES
+ NUM_THREADS 1 Tempo Total de Execução: 24.392 segundos (para todas as iterações de K)
+ NUM_THREADS 2 Tempo Total de Execução: 16.386 segundos (para todas as iterações de K)
+ NUM_THREADS 4 Tempo Total de Execução: 10.897 segundos (para todas as iterações de K)
+ NUM_THREADS 8 Tempo Total de Execução: 7.345 segundos (para todas as iterações de K)
+*/
+
 #include <algorithm> // Necessário para std::sort
 #include <cmath>
 #include <fstream>
@@ -15,11 +22,6 @@ double omp_get_wtime() { return (double)clock() / CLOCKS_PER_SEC; }
 #endif
 
 #define NUM_THREADS = 8
-
-// NUM_THREADS 1 Tempo Total de Execução: 24.392 segundos (para todas as iterações de K)
-// NUM_THREADS 2 Tempo Total de Execução: 16.386 segundos (para todas as iterações de K) 
-// NUM_THREADS 4 Tempo Total de Execução: 10.897 segundos (para todas as iterações de K) 
-// NUM_THREADS 8 Tempo Total de Execução: 7.345 segundos (para todas as iterações de K) 
 
 using namespace std;
 

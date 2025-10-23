@@ -1,3 +1,12 @@
+/* TEMPO DE EXECUÇÕES
+    1 processo com 4 threads:
+    Tempo Total de Execução: 38.664712 segundos (para todas as iterações de K)
+    2 processos com 2 threads:
+    Tempo Total de Execução: 19.928303 segundos (para todas as iterações de K)
+    4 processos sem threads:
+    Tempo Total de Execução: 11.586576 segundos (para todas as iterações de K)
+*/
+
 #include <algorithm>
 #include <cmath>
 #include <fstream>
@@ -15,15 +24,6 @@ double omp_get_wtime() { return (double)clock() / CLOCKS_PER_SEC; }
 #endif
 
 using namespace std;
-
-/* TEMPO DE EXECUÇÕES
-    1 processo com 4 threads:
-    Tempo Total de Execução: 38.664712 segundos (para todas as iterações de K)
-    2 processos com 2 threads:
-    Tempo Total de Execução: 19.928303 segundos (para todas as iterações de K)
-    4 processos sem threads:
-    Tempo Total de Execução: 11.586576 segundos (para todas as iterações de K)
-*/
 
 // Classe Point (inalterada)
 class Point
