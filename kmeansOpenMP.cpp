@@ -16,10 +16,10 @@ double omp_get_wtime() { return (double)clock() / CLOCKS_PER_SEC; }
 
 #define NUM_THREADS = 8
 
-// NUM_THREADS 1 Tempo Total de Execução: 10.911360 segundos (para todas as iterações de K)
-// NUM_THREADS 2 Tempo Total de Execução: 9.793595 segundos (para todas as iterações de K) usando schedule Tempo Total de Execução: 10.260880 segundos (para todas as iterações de K)
-// NUM_THREADS 4 Tempo Total de Execução: 10.431008 segundos (para todas as iterações de K) usando schedule Tempo Total de Execução: 8.354732 segundos (para todas as iterações de K)
-// NUM_THREADS 8 Tempo Total de Execução: 9.017762 segundos (para todas as iterações de K) usando schedule Tempo Total de Execução: 11.870207 segundos (para todas as iterações de K)
+// NUM_THREADS 1 Tempo Total de Execução: 24.392 segundos (para todas as iterações de K)
+// NUM_THREADS 2 Tempo Total de Execução: 16.386 segundos (para todas as iterações de K) 
+// NUM_THREADS 4 Tempo Total de Execução: 10.897 segundos (para todas as iterações de K) 
+// NUM_THREADS 8 Tempo Total de Execução: 7.345 segundos (para todas as iterações de K) 
 
 using namespace std;
 
