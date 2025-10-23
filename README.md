@@ -1,6 +1,6 @@
 # Implementação KMeans Sequencial:
 
-Para rodar:
+Para rodar (kmeans.cpp)
 
 g++ kmeans.cpp -o kmeans -fopenmp
 
