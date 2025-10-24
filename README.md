@@ -24,6 +24,14 @@ OMP_NUM_THREADS=1 mpirun -np 4 ./kmeans_parallel Sample.csv ./saida <br>
 
 # Implementação KMeans Misto 2:
 
+mpicxx -O3 -fopenmp -march=native -o kmeans_mpi_bcast kmeans_mpi_bcast.cpp<br>
+<br>
+~/paralela$ # 1, 2, 4 e 8 threads<br>
+OMP_NUM_THREADS=1 mpirun -np 1 ./kmeans_mpi_bcast Sample.csv ./saida<br>
+OMP_NUM_THREADS=2 mpirun -np 1 ./kmeans_mpi_bcast Sample.csv ./saida<br>
+OMP_NUM_THREADS=4 mpirun -np 1 ./kmeans_mpi_bcast Sample.csv ./saida<br>
+OMP_NUM_THREADS=8 mpirun -np 1 ./kmeans_mpi_bcast Sample.csv ./saida<br>
+
 
 
 
