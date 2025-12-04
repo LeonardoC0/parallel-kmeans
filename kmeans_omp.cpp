@@ -1,5 +1,5 @@
 /**
- * clang++ -fopenmp -fopenmp-targets=nvptx64 -O3 kmeans_omp.cpp -o kmeans_omp
+ * gcc8 -fopenmp -fopenmp-targets=nvptx64 -O3 kmeans_omp.cpp -o kmeans_omp
  * ou
  * nvc++ -mp=gpu -O3 kmeans_omp.cpp -o kmeans_omp (compilador NVIDIA HPC)
  */
@@ -392,4 +392,5 @@ int main(int argc, char **argv)
     printf("\nTempo Total de Execução: %f segundos\n", end_time - start_time);
 
     return 0;
+
 }
